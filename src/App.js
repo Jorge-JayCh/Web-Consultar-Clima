@@ -27,7 +27,7 @@ function App() {
       if ( consultar ) {
 
         const apiId = process.env.REACT_APP_APIKEY;
-        const url = `http://api.openweathermap.org/data/2.5/weather?q=${ ciudad },${ pais }&appid=${ apiId }`;
+        const url = `https://api.openweathermap.org/data/2.5/weather?q=${ ciudad },${ pais }&appid=${ apiId }`;
     
         const respuesta = await fetch( url );
         const resultado = await respuesta.json();
